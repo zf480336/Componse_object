@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'Componse_object_Example' do
+  pod 'Componse_object', :path => '../'
+
+  target 'Componse_object_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
